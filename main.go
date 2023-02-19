@@ -1,10 +1,12 @@
 package main
 
 import (
-	"github.com/Vlasabanana/go-fiber-crm/lead"
 	"fmt"
+
 	"github.com/Vlasabanana/go-fiber-crm/database"
+	"github.com/Vlasabanana/go-fiber-crm/lead"
 	"github.com/gofiber/fiber"
+	"github.com/jinzhu/gorm"
 )
 
 func setupRoutes(app *fiber.App) {
@@ -30,5 +32,5 @@ func main() {
 	initDatabase()
 	setupRoutes(app)
 	app.Listen(3000)
-	defer database.DBConn.Close
+	defer database.DBConn.Close()
 }
