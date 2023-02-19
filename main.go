@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/vlasabanana/go-fiber-crm/lead"
+	"github.com/Vlasabanana/go-fiber-crm/lead"
 	"fmt"
-	"github.com/vlasabanana/go-fiber-crm/database"
+	"github.com/Vlasabanana/go-fiber-crm/database"
 	"github.com/gofiber/fiber"
 )
 
