@@ -25,7 +25,7 @@ func initDatabase() {
 	}
 	fmt.Println("Connection to database is open")
 	database.DBConn.AutoMigrate(&lead.Lead{})
-	fmt.Println("Database migrated")
+	fmt.Println("Database migrated!")
 }
 
 func main() {
